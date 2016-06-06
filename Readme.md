@@ -19,13 +19,14 @@ Inspried by [LeetCode.Swift](https://github.com/lexrus/LeetCode.swift)
 进击吧，Swift。
 
 
-手边有一本CLRS的帮助下,如果题目可以在CLRS上考证到 -> 😎
+如果题目可以在CLRS上考证到 -> 😎
 
 
 ##### Divide & Conquer
 
+- 4 Median of Two Sorted Arrays 😎ch9 Exercises 9.3-8
 - 53 Maximum Subarray	😎ch4 example 4.1
-- 4 Median of Two Sorted Arrays 😎ch9 Exercises 9.3-8 
+ 
 
 
 
