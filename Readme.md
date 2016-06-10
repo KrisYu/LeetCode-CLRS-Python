@@ -7,11 +7,9 @@ Inspried by [LeetCode.Swift](https://github.com/lexrus/LeetCode.swift)
 > CLRS在手，LeetCode我有.
 
 
-#### Swift刷题遇到的问题
+#### 一些刷题感想
 
-- 参数传递，swift function parameter默认是pass by copy, 并且是let, 不可改变，leetcode不支持使用var或者inout来修饰，所以可能办法就是使用内部var来覆盖,可以参见[swift-evolution](https://github.com/apple/swift-evolution/blob/master/proposals/0003-remove-var-parameters.md)
-- String并不同于别的语言的String,因为包含了emoji😁，所以并没有像别的语言有str.length,但是可以[用character来loop](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/StringsAndCharacters.html)
-- Swift 一直再进化，3.0即将到来，可能之前的一些写法又将会被推翻
+
 
 
 #### 进击吧，Swift
@@ -29,16 +27,15 @@ Inspried by [LeetCode.Swift](https://github.com/lexrus/LeetCode.swift)
 - 169 Majority Element  😎类似 ch4 problems 4.4 更为巧妙[Moore_majority_vote_algorithm](https://en.wikipedia.org/wiki/Boyer–Moore_majority_vote_algorithm)
 
 
+#### Resource
 
- 
+我天，这也太棒了吧。
 
-
-
-
+[Swift Algorithm Club](https://github.com/raywenderlich/swift-algorithm-club)
 
 #### 声明
 
-解法可能并非最佳
+解法并非最佳
 
 
 
