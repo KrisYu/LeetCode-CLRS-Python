@@ -24,8 +24,12 @@ Inspried by [LeetCode.Swift](https://github.com/lexrus/LeetCode.swift)
 
 ##### Divide & Conquer
 
-- 4 Median of Two Sorted Arrays 😎ch9 Exercises 9.3-8
-- 53 Maximum Subarray	😎ch4 example 4.1
+- 4 Median of Two Sorted Arrays  😎ch9 Exercises 9.3-8  O(lg(m+n))
+- 53 Maximum Subarray	😎ch4 example 4.1  O(nlgn)
+- 169 Majority Element  😎类似 ch4 problems 4.4 更为巧妙[Moore_majority_vote_algorithm](https://en.wikipedia.org/wiki/Boyer–Moore_majority_vote_algorithm)
+
+
+
  
 
 
