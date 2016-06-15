@@ -20,7 +20,7 @@ Inspried by [LeetCode.Swift](https://github.com/lexrus/LeetCode.swift)
 
 #### 声明
 
-解法并不一定最佳
+解法并非最佳
 
 
 
