@@ -48,3 +48,21 @@
 
 
 以上文字来自 1point3arces的牛人解答
+
+
+
+Backtracking 伪码
+
+
+```
+Pick a starting point.
+while(Problem is not solved)
+	For each path from the starting point.
+		check if selected path is safe, if yes select it
+                and make recursive call to rest of the problem
+		If recursive calls returns true, then return true.
+		else undo the current move and return false.
+	End For
+	If none of the move works out, return false, NO SOLUTON.
+
+```
