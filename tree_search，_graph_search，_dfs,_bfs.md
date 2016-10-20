@@ -4,6 +4,52 @@
 其实原本是根本不知道还有tree search的，只知道graph search，原来graph search就是一般我看到的dfs，bfs，有一个结构来记录visited node，这样在寻找邻居的时候，防止已经visit的node再被visit.
 
 
+### Tree Search
+
+general tree search pseudocode
+
+
+```
+function TREE_SEARCH(problem, strategy) returns a solution, or failure
+	initialize the search tree using the initial state of problem
+	loop do
+		if there are no candidates for expansion then return failure
+		choose a leaf node for expansion according to strategy
+		if the node contains a goal state then return the corresponding solution
+		else expand the node and add the resulting nodes to the search tree
+	end
+```
+
+
+
+
+### Graph Search
+
+very simple fix: never expand a state type twice
+
+```
+function GRAPH_SEARCH(problem, fringe) returns a solution, or failure
+	closed <- an empty set
+	fringe <- INSERT(MAKE-NODE(INITIAL-STATE[problem]),fringe)
+	loop do
+		if fringe is empty then return failure
+		node <- REMOVE-FRONT(fringe)
+		if GOAL-TEST(problem, STATE[node]) then return node
+		if STATE[node] is not in closed then
+			add STATE[node] to closed
+			fringe <- INSERTALL(EXPAND(node, problem))
+	end
+
+```
+
+
+重要的点：
+
+- fringe
+- strategy
+
+然后没有查重的过程
+
 ####DFS 
 
 递归伪码
@@ -18,6 +64,7 @@
 
 非递归伪码，其实递归在计算机内部就是用的stack，所以这里用stack可以解决问题
 
+每次都expand deepest node
 
 ```
 1  procedure DFS-iterative(G,v):
@@ -60,6 +107,9 @@
 ```
 
 其实跟以上DFS的非递归写成一样也行
+
+expand the shallowest node
+
 
 ```
 1  procedure BFS-iterative(G,v):
@@ -116,3 +166,18 @@ print (dfs_paths(graph, 'A', 'F'))   #['A', 'B', 'E', 'F']
 ```
 
 一旦BFS/DFS与更具体的，更有特性的data structure结合起来，比如binary search tree，那么BFS/DFS会针对这个tree traversal显得更有特性。
+
+
+#### UCS
+
+expand the cheapest node first
+
+Fringe is a priority queue
+
+乃Dijkstra算法
+
+
+#### Greedy
+
+#### A*
+
