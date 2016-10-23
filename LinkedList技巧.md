@@ -94,20 +94,22 @@ class Solution(object):
 算法：
 
 ```
- def findMid(head):
-    if head == None:
-        return None
-    else:
-        slow = head
-        fast = head
+
+def findMid(head):
+    if head == None or head.next == None:
+        return head
+
+    slow = head
+    fast = head
+
+    while fast.next and fast.next.next:
+        slow = slow.next
+        fast = fast.next.next
         
-        while slow and fast.next.next:
-            slow = slow.next
-            fast = fast.next.next
-        
-        print(slow.val)
-        return slow
+    return slow
 ```
+
+
 
 
 
