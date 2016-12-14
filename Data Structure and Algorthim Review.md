@@ -40,15 +40,62 @@
               ​		• 如果x所在的节点有一个非空的右子树，则右子树中的最小值就是答案
 
               ​		• 否则我们需要向上回溯，找到最近的一个祖先，使得该祖先的左侧孩子，也为x的祖	先。
-
+              ​		
 
       - [x] 删除
 
-             • 如果x没有子节点，或者只有一个孩子，直接将x“切下”;
+               • 如果x没有子节点，或者只有一个孩子，直接将x“切下”;
 
-            • 否则，x有两个孩子，我们用其右子树中的最小值替换掉x，然后将右子树中的这一最小值“切掉”。	
-
-
+               • 否则，x有两个孩子，我们用其右子树中的最小值替换掉x，然后将右子树中的这一最小值“切掉”。	
 
 
+
+
+
+
+- [x] 递归
+      - [x] 入门
+
+            - 回文
+            - 阶乘 factorial， 慕指数
+            - 分形
+            - Tower of Hanoi
+
+      - [x] 排列 Permutation
+
+      - [x] 子集 Subsets
+
+      - [ ] backtracking
+
+
+- [x] dynamic programming    
+
+      -  coin change
+
+      -  longest common subsequence
+
+      -  edit distance
+
+         ​
+
+
+
+
+-[ ] majority element
+
+
+
+- [ ] 随机
+      - 水塘抽样
+      - 洗牌
+
+
+-[ ] 荷兰旗问题
+
+
+-[ ] quick select
+
+
+-[ ] median of two sorted array
+-[ ] regular expression
 
