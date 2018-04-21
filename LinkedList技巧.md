@@ -2,11 +2,12 @@
 
 结点定义如下：
 
-	class ListNode(object):
-	    def __init__(self, x):
-	        self.val = x
-	        self.next = None
-
+```python
+class ListNode(object):
+    def __init__(self, x):
+        self.val = x
+        self.next = None
+```
 
 可以使用的技巧包括:
 
@@ -15,8 +16,10 @@
 
 有的时候因为边界条件，需要判定是否是list的head，因为处理起来会有些不同，而创造一个dummy head则可以极大的解决一些问题。
 
-	     dummy = ListNode(-1)
-        dummy.next = head
+```python
+dummy = ListNode(-1)
+dummy.next = head
+```
 
 ##双指针
 
