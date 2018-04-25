@@ -39,6 +39,24 @@ Python也是可以追求运行速度的，除了算法方面的提升，也有�
 
 
 
+- reverse list
+
+lst = [1,2,3]
+
+print lst[::-1] #[3,2,1]
+
+lst 也有reverse函数 ，比如 lst.reverse()， 这个也是in-place reverse，改变lst本身
+
+我们还可以 nlst = list(reversed(lst))， reversed(lst) 是创建 listreverseiterator object， lst本身并没有改变，跟sorted类似。
+
+> 设计还是很一直的，sort/reverse 都是动词，我们也改变了lst，而sorted/reversed 有一种祈使语气，我们也没有来概念lst本身。
+
+这也也适用于str, str可是没有reverse 函数的，str[::-1] 可用 √
+
+
+
+
+
 
 - 用xrange 
 
@@ -62,7 +80,7 @@ row  = len(matrix)
 col = len(matrix[0]) if row else 0 
 
 
-这样写通用的原因是， 当matrix = [], row = 0, col =0
+这样写通用的原因是， 当matrix = [], row =0, col =0
 
 
 - list 填 0
@@ -108,21 +126,6 @@ else :
 val = D.get(1, 0)
 
 
-
-
-- reverse list
-
-
-lst = [1,2,3]
-
-
-print lst[::-1] #[3,2,1]
-
-
-lst 也有reverse函数
-
-
-这也也适用于str, str可是没有reverse 函数的，str[::-1] 可用 √
 
 
 
